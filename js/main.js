@@ -17,7 +17,7 @@ $(document).ready(function () {
     $('.counter').text(currentFloor); // записываем полученный этаж в счетчик
   }); 
 
-  /* ЗДЕСЬ НИЧЕГО НЕ РАБОТАЕТ
+
   // когда наводим на квартиру подсвечивается текст
   flatsPath.on('mouseover', function () {
         currentFlats = $(this).attr("data-flats"); // записываем текущее значение в переменную с квартирами
@@ -28,14 +28,14 @@ $(document).ready(function () {
     });
 
     // когда наводим на текст, подсвечивается квартира
-    flatsPathItem.on('mouseover', function () {
-        currentFlats = $(this).attr("data-item"); // записываем текущее значение в переменную с квартирами
-        flatsPath.removeClass("current-flats"); // удаляем класс квартир
-        flatsPathItem.removeClass("current-flats-item"); // удаляем класс характеристик квартиры
-        $(`[data-flats=${currentFlats}]`).toggleClass("current-flats"); // добавляем класс квартиры
-        $(`[data-item=${currentFlats}]`).toggleClass("current-flats-item"); // добавляем класс характеристик квартиры
-    });
-    И ВОТ ДО СЮДА*/
+  flatsPathItem.on('mouseover', function () {
+      currentFlats = $(this).attr("data-item"); // записываем текущее значение в переменную с квартирами
+      flatsPath.removeClass("current-flats"); // удаляем класс квартир
+      flatsPathItem.removeClass("current-flats-item"); // удаляем класс характеристик квартиры
+      $(`[data-flats=${currentFlats}]`).toggleClass("current-flats"); // добавляем класс квартиры
+      $(`[data-item=${currentFlats}]`).toggleClass("current-flats-item"); // добавляем класс характеристик квартиры
+  });
+
     
   floorPath.on('click', toggleModal); // клик на этаж открывает окно
   modalCloseButton.on('click', toggleModal); // клик на кнопку закрыть закрывает окно
