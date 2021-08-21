@@ -163,10 +163,6 @@ path.current-floor {
   opacity: 0;
   cursor: pointer;
 }
-.flats path:hover {
-  opacity: 1;
-  cursor: pointer;
-}
 .modal-title {
   font-family: "BebasNeueRegular", sans-serif;
   font-weight: normal;
@@ -193,10 +189,6 @@ path.current-floor {
   line-height: 19px;
   color: #635854;
   text-decoration: none;
-}
-.flat-link:hover {
-  text-decoration-line: underline;
-  color: #3596f5;
 }
 .modal-alert {
   font-family: Roboto;
@@ -272,15 +264,11 @@ path.current-floor {
   margin-left: 30px;
 }
 
-/*
-a.current-flat-item {
+a.current-flats-item {
   color: #3596f5;
   text-decoration: underline;
   cursor: pointer;
 }
-ЭТО ДОЛЖНО РАБОТАТЬ, НО НЕ РАБОТАЕТ :( 
-  А ЕСЛИ БЫ РАБОТАЛО flat-link:hover И flats path:hover МОЖНО УБРАТЬ
-path.current-flat {
+path.current-flats {
   opacity: 1;
-} 
-*/
+}
